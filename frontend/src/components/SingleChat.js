@@ -52,7 +52,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `/api/message/${selectedChat._id}`,
+        `https://lets-talk-j7rh.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);
@@ -83,7 +83,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "/api/message",
+          "https://lets-talk-j7rh.onrender.com/api/message",
           {
             content: newMessage,
             chatId: selectedChat,
