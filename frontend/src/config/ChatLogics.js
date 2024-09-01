@@ -45,3 +45,13 @@ export const getSender = (loggedUser, users) => {
 export const getSenderFull = (loggedUser, users) => {
   return users[0]._id === loggedUser._id ? users[1] : users[0];
 };
+
+
+/*
+isSameSenderMargin: Determines the margin between messages from different senders.
+isSameSender: Checks if the current message is the last in a series from the same sender.
+isLastMessage: Determines if the current message is the last in the chat.
+isSameUser: Checks if the current message is from the same user as the previous one.
+getSender: Returns the name of the other user in a chat.
+getSenderFull: Returns the full user object of the other user in a chat.
+*/

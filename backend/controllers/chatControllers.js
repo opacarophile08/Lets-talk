@@ -1,6 +1,9 @@
 const asyncHandler = require("express-async-handler");
+//// Imports express-async-handler to handle exceptions in async express routes
 const Chat = require("../models/chatModel");
+//// Imports the Chat model to interact with the chat collection in MongoDB
 const User = require("../models/userModel");
+//// Imports the User model to interact with the user collection in MongoDB
 
 //@description     Create or fetch One to One Chat
 //@route           POST /api/chat/
